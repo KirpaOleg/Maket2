@@ -5,47 +5,71 @@
   font-weight: normal;
 }
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 button {
   border: 0;
 }
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+/* header */
 .container {
   max-width: 1400px;
   padding: 0px 5px;
   margin: 0 auto;
 }
-.carousel__inner {
+.header__inner {
   background-image: url("../images/Carousel/Star-Wars-Battlefront-II-combat.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 206px;
   padding-bottom: 200px;
-  max-width: 1400px; 
 }
-.carousel__inner-text{
-  padding-left: 831px;
+.header__about {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 566px;
+  margin-bottom: 55px;
 }
-.carousel-text__title {
+.header__about-inner {
+  display: flex;
+  flex-direction: column;
+}
+.header-text__title {
   font-family: "HelveticaNeue";
   font-size: 36px;
   line-height: 42px;
   color: #fff;
 }
-.carousel-text__discribe {
+.header-text__discribe {
   font-family: "HelveticaNeue";
   font-size: 24px;
   line-height: 28px;
   color: #fff;
-  margin-bottom: 13px;
 }
-.carousel__user-com {
-  width: 390px;
-  height: 95px;
-  margin-bottom: 20px;
+.header__slayder {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1274px;
+  max-height: 24px;
+  margin-bottom: 55px;
+  cursor: pointer;
 }
-.carousel__trailer {
+.header__button {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end; 
+  max-width: 844px; 
+}
+.header__trailer {
   font-family: "HelveticaNeue";
   font-size: 16px;
   line-height: 21px;
@@ -58,7 +82,7 @@ button {
   border-radius: 4px;
   margin-right: 13px;
 }
-.carousel__game {
+.header__game {
   font-family: "HelveticaNeue";
   font-size: 16px;
   line-height: 21px;
@@ -70,3 +94,116 @@ button {
   padding: 8px 19px 9px 19px;
   border-radius: 4px;
 }
+.header__indicator-slayder {
+  display: block;
+  position: relative;
+  top: 158px;
+}
+.header__indicator {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100px;
+  cursor: pointer;
+}
+.header__indicator-inner1 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #8DD83D;
+  margin-left: 10px;
+}
+.header__indicator-inner {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border:1px solid #8DD83D;
+  margin-left: 10px;
+}
+/* nav class="menu" */
+.menu {
+  margin: 0 auto;
+} 
+.menu__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "HelveticaNeue";
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 15px 168px 16px 163px;
+  background: #373A3C;
+  border-radius: 4px;
+}
+.menu__logo img {
+  width: 96px;
+  height: 29px;
+  cursor: pointer;
+} 
+.menu__logo-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+} 
+.menu__list{
+  max-width: 685px;
+}  
+.menu__list-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+}
+.menu__list-item a{
+  font-family: "HelveticaNeue";
+  font-size: 16px;
+  line-height: 16px;
+  color: #48555B;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+.menu__list-item a:hover{
+  color: #FFFFFF;
+}
+ .menu__list-item + .menu__list-item {
+  margin-left: 25px;
+}
+.menu__list-item input {
+  width: 210px;
+  height: 38px;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+}
+input::placeholder {
+  font-family: "HelveticaNeue";
+  font-size: 16px;
+  line-height: 21px;
+  color: #435766;
+  padding-left: 16px;
+  opacity: 0.4;
+}
+.menu__list-shape {
+  padding-left: 9px;
+}
+.menu__list-shape1 {
+  padding-right: 9px;
+}
+.container-end{
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  align-self: flex-end;
+}
+.container__menu-end{
+  display: flex;
+  background: gray;
+  width: 1390px;
+  height: 3px;
+  margin-top: -209px;
+  z-index: 2;
+} 
