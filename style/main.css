@@ -73,7 +73,7 @@ ul {
   justify-content: flex-end; 
   max-width: 844px; 
 }
-.header__trailer {
+.header__trailer a {
   font-family: "HelveticaNeue";
   font-size: 16px;
   line-height: 21px;
@@ -87,7 +87,7 @@ ul {
   border-radius: 4px;
   margin-right: 13px;
 }
-.header__game {
+.header__game a {
   font-family: "HelveticaNeue";
   font-size: 16px;
   line-height: 21px;
@@ -279,7 +279,7 @@ input::placeholder {
   margin: 38px 21px 27px 21px;
   cursor: pointer;
 }
-.section__best {
+.section__best a {
   font-family: "HelveticaNeue";
   font-size: 16px;
   line-height: 21px;
@@ -308,6 +308,17 @@ input::placeholder {
   line-height: 42px;
   color: #FFFFFF;
   padding-bottom: 54px;
+  position: relative;
+}
+.section__games-text::before {
+  content: "";
+  background-image: url("../images/sectiongames/icon-next.png");
+  position: absolute;
+  cursor: pointer;
+  width: 31px;
+  height: 31px;
+  right: 60px;
+  top: 103px;
 }
 .section__games-box {
   display: flex;
@@ -360,6 +371,14 @@ input::placeholder {
   cursor: pointer;
   margin: 0px 0px 27px 20px;
 }
+.section__best-games a {
+  font-family: "HelveticaNeue";
+  font-size: 16px;
+  line-height: 21px;
+  cursor: pointer;
+  color: #fff;
+  padding: 19px 23px 20px;
+}
 .section__games-endbtn{
   display: flex;
   justify-content: center;
@@ -367,7 +386,7 @@ input::placeholder {
 .section__games-end {
   margin-bottom: 160px;
 }
-.section__best-endbtn {
+.section__best-endbtn a {
   font-family: "HelveticaNeue";
   font-size: 21px;
   line-height: 21px;
@@ -408,22 +427,26 @@ input::placeholder {
   justify-content: flex-start;
 }
 .design__games-btn {
+  padding-top: 37px;
+  display: flex;
+  justify-content: flex-start;
+}
+.design__games-btn a {
   font-family: "HelveticaNeue";
   font-size: 16px;
   line-height: 21px;
   text-align: center;
   color: #fff;
-  
   margin-bottom: 145px;
 }
-.design__btn-your {
+.design__btn-your a {
   background: linear-gradient(#686C6F,#373A3C);
   padding: 20px 61px 19px 52px;
   cursor: pointer;
   margin-right: 15px;
   border-radius: 4px;
 }
-.design__btn-concole {
+.design__btn-concole a {
   background: #8DD83D;
   padding: 19px 23px 20px;
   cursor: pointer;
