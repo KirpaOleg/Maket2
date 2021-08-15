@@ -7,6 +7,10 @@
 * {
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  display: inline-block;
+}
 button {
   padding: 0;
   border: none;
@@ -14,14 +18,10 @@ button {
   color: inherit;
   background-color: transparent;
 }
-a {
-  text-decoration: none;
-  display: inline-block;
-}
 ul {
   list-style: none;
 }
-/* header */
+/* header class="header" */
 .container {
   max-width: 1400px;
   padding: 0px 5px;
@@ -78,6 +78,7 @@ ul {
   font-size: 16px;
   line-height: 21px;
   text-align: center;
+  cursor: pointer;
   color: #fff;
   width: 138px;
   height: 38px;
@@ -91,6 +92,7 @@ ul {
   font-size: 16px;
   line-height: 21px;
   text-align: center;
+  cursor: pointer;
   color: #fff;
   width: 148px;
   height: 38px;
@@ -148,7 +150,7 @@ ul {
 .menu__logo-inner{
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
 } 
 .menu__list{
   max-width: 685px;
@@ -211,7 +213,7 @@ input::placeholder {
   margin-top: -209px;
   z-index: 2;
 } 
-/* <section class="about"> */
+/* section class="about" */
 .section__rectangle {
   margin: 0 auto;
   background: linear-gradient(#686C6F,#373A3C);
@@ -245,8 +247,10 @@ input::placeholder {
   background-color: #FFFFFF;
   border: 1px solid #8DD83D;
   border-radius: 4px;
-  /* margin-right: 64px; */
   max-width: 320px;
+}
+.rectangle__box-inner img {
+  border-radius: 4px;
 }
 .rectangle__inner {
   text-align: left;
@@ -289,3 +293,140 @@ input::placeholder {
 .rectangle__box-gold {
   padding: 33px 59px;
 }  
+/* section class="games" */
+.section__games {
+  background-image: url("../images/sectiongames/Rectangle1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section__games-text {
+  padding-top: 97px;
+  font-family: "HelveticaNeue";
+  text-align: center;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  padding-bottom: 54px;
+}
+.section__games-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 74px;
+}
+.game__box-inner {
+  background-color: #FFFFFF;
+  border: 1px solid #8DD83D;
+  border-radius: 4px;
+  margin-left: 17px;
+}
+.game__inner {
+  text-align: left;
+  padding: 16px 0px 16px 22px;
+  font-family: "HelveticaNeue";
+  font-size: 18px;
+  line-height: 21px;
+  color: #435766;;
+}
+.game__inner-text {
+  text-align: left;
+  padding-left: 22px;
+  font-family: "HelveticaNeue";
+  font-size: 21px;
+  line-height: 25px;
+  color: #435766;
+}
+.game__button-inner {
+  text-align: center;
+  background: #8DD83D;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0px 20px 27px;
+}
+.game__button {
+  margin-top: 43px;
+}
+.game__button-btn {
+  margin-top: 121px;
+}
+.game__button-btn2 {
+  margin-top: 109px;
+} 
+.game__button-inner2 {
+  text-align: center;
+  background: #8DD83D;
+  border-radius: 4px 0px 0px 4px;
+  cursor: pointer;
+  margin: 0px 0px 27px 20px;
+}
+.section__games-endbtn{
+  display: flex;
+  justify-content: center;
+}
+.section__games-end {
+  margin-bottom: 160px;
+}
+.section__best-endbtn {
+  font-family: "HelveticaNeue";
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(#686C6F,#373A3C);
+  border-radius: 4px;
+  padding: 11px 47px 21px;
+}
+/* section class="design" */
+.design__games {
+  background-image: url("../images/sectiondesign/design.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.design__games-inner {
+  margin: 0 auto;
+  max-width: 1060px;
+}
+.design__games-text {
+  padding-top: 114px;
+  font-family: "HelveticaNeue";
+  text-align: left;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FFFFFF;
+}
+.design__games-text2 {
+  padding-top: 9px;
+  font-size: 24px;
+  line-height: 28px;
+}
+.design__games-box {
+  padding-top: 37px;
+  display: flex;
+  justify-content: flex-start;
+}
+.design__games-btn {
+  font-family: "HelveticaNeue";
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #fff;
+  
+  margin-bottom: 145px;
+}
+.design__btn-your {
+  background: linear-gradient(#686C6F,#373A3C);
+  padding: 20px 61px 19px 52px;
+  cursor: pointer;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+.design__btn-concole {
+  background: #8DD83D;
+  padding: 19px 23px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+/* footer */
