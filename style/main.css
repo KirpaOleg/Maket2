@@ -308,29 +308,25 @@ input::placeholder {
   line-height: 42px;
   color: #FFFFFF;
   padding-bottom: 54px;
-  position: relative;
-}
-.section__games-text::before {
-  content: "";
-  background-image: url("../images/sectiongames/icon-next.png");
-  position: absolute;
-  cursor: pointer;
-  width: 31px;
-  height: 31px;
-  right: 60px;
-  top: 103px;
 }
 .section__games-box {
+  margin: 0 auto;
+  max-width: 1082px;  
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding-bottom: 74px;
+}
+.section__games-box img {
+  width: 318px;
+  height: 180px;
 }
 .game__box-inner {
   background-color: #FFFFFF;
   border: 1px solid #8DD83D;
   border-radius: 4px;
-  margin-left: 17px;
+  max-width: 320px;
+  max-height: 420px;
 }
 .game__inner {
   text-align: left;
@@ -358,19 +354,9 @@ input::placeholder {
 .game__button {
   margin-top: 43px;
 }
-.game__button-btn {
-  margin-top: 121px;
-}
 .game__button-btn2 {
-  margin-top: 109px;
+  margin-top: 92px;
 } 
-.game__button-inner2 {
-  text-align: center;
-  background: #8DD83D;
-  border-radius: 4px 0px 0px 4px;
-  cursor: pointer;
-  margin: 0px 0px 27px 20px;
-}
 .section__best-games a {
   font-family: "HelveticaNeue";
   font-size: 16px;
@@ -457,13 +443,11 @@ input::placeholder {
   background: #373A3C;
   padding-top: 58px;
 }
-.footer__list-items {
-  padding-left: 165px;
-}
 .footer__inner-menu {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1030px;
+  padding-left: 165px;
 }
 .footer__list-itemX a {
   padding-bottom: 35px;
@@ -481,15 +465,12 @@ input::placeholder {
   text-align: left;
   color: #fff;
 }
-.footer__inner-text {
-  min-width: 386px;
-}
 .footer__list-social img {
   padding-right: 20px;
 }
 .footer__inner-end {
   margin: 0 auto;
-  width: 1200px;  
+  max-width: 1200px;  
 }
 .footer__line {
   border: 1px solid #7d7f80;
