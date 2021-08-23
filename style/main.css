@@ -62,9 +62,10 @@ ul {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 1274px;
   max-height: 24px;
   margin-bottom: 55px;
+  padding-right: 50px;
+  padding-left: 50px;
   cursor: pointer;
 }
 .header__button {
@@ -490,3 +491,13 @@ input::placeholder {
   color: #fff;
 }
 /* END */
+
+/* adaptiv */
+@media (max-width: 970px) {
+  .header__about {
+    justify-content: center;
+  }
+  .header__button {
+    justify-content: center;
+  }
+}
