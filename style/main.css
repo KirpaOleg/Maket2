@@ -214,6 +214,60 @@ input::placeholder {
   margin-top: -209px;
   z-index: 2;
 } 
+.hamburger-menu {
+  display: none;
+}
+#menu__toggle {
+visibility: hidden;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px; 
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  transform: translateX(0%);
+}
+.menu__list-item {
+  display: block;
+  transition-duration: .25s; 
+}
 /* section class="about" */
 .section__rectangle {
   margin: 0 auto;
@@ -492,12 +546,166 @@ input::placeholder {
 }
 /* END */
 
-/* adaptiv */
+/* adaptiv slider */
 @media (max-width: 970px) {
   .header__about {
     justify-content: center;
   }
   .header__button {
     justify-content: center;
+  }
+  .header__slayder {
+  visibility: hidden;
+  }
+}
+/* adaptiv menu */
+@media (max-width: 1250px) {
+  .menu__inner {
+    padding: 15px 50px 16px 50px;
+  }
+}
+@media (max-width: 930px) {
+  .menu__inner { 
+    position: relative;
+    display: block;
+    border-bottom: none;
+  }
+  .menu__list {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+    position: relative;
+    height: 0px;
+  }
+  .menu__box {
+    margin: 0 auto;
+    padding: 10px 10px;
+    transition-duration: .25s;
+    z-index: 1;
+    visibility: hidden;
+    transform: translateX(-250%);
+    border-radius: 4px ;
+    background-color: #373A3C;
+  }
+  .menu__list-item + .menu__list-item {
+    margin: 18px 0px 0px;
+  }
+  .menu__logo {
+    text-align: end;
+  }
+  .menu__list-item a{
+    justify-content: center;
+  }
+}
+@media (max-width: 1200px) {
+  .rectangle__box-inner {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 1000px) {
+  .rectangle__box {
+    flex-direction: column;
+  }
+  .rectangle__box-inner {
+    margin-top: 15px;
+    transform: scale(1.0)
+  }
+}
+@media (max-width: 450px) {
+   .rectangle__box-inner {
+    margin-top: -25px;
+    transform: scale(0.8)
+  }
+}
+@media (max-width: 1200px) {
+  .game__box-inner {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 1000px) {
+  .section__games-box {
+    flex-direction: column;
+  }
+  .game__box-inner {
+    margin-top: 15px;
+    transform: scale(1.0) 
+  }
+}
+@media (max-width: 450px) {
+  .game__box-inner {
+   margin-top: -25px;
+   transform: scale(0.8)
+ }
+}
+@media (max-width: 1160px) {
+  .design__games-text {
+    text-align: center;
+  }
+  .design__games-box {
+    justify-content: center;
+  }
+}
+@media (max-width: 575px) {
+  .design__games-btn {
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .design__games-btn a {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1250px) {
+  .footer__inner-end {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  .footer__inner-menu {
+    max-width: 950px;
+  }
+}
+@media (max-width: 1050px) {
+  .footer__inner-end {
+    max-width: 800px;
+  }
+  .footer__inner-menu {
+    max-width: 750px;
+  }
+}
+@media (max-width: 930px) {
+  .footer__inner-end {
+    max-width: 800px;
+  }
+  .footer__inner-menu {
+    max-width: 750px;
+    padding-left: 65px;
+  }
+}
+@media (max-width: 850px) {
+  .footer__inner-end {
+    max-width: 600px;
+  }
+  .footer__inner-menu {
+    max-width: 650px;
+    padding-left: 35px;
+  }
+}
+@media (max-width: 675px) {
+  .footer__inner-end {
+    max-width: 500px;
+  }
+  .footer__inner-menu {
+    max-width: 650px;
+    padding-left: 35px;
+  }
+}
+@media (max-width: 550px) {
+  .footer__inner-end {
+    max-width: 290px;
+  }
+  .footer__inner-menu {
+    margin: 0 auto;
+    flex-direction: column;
   }
 }
